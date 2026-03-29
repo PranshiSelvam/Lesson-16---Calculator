@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #dbeeff;
+    /* light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator box */
+#calculator {
+    background: #b3d9ff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    border: 2px solid #5aa9e6;
+}
+
+/* Display */
+#result {
+    background: #e6f3ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    border: 1px solid #5aa9e6;
+}
+
+#history-value {
+    color: #4a6fa5;
+    font-size: 13px;
+}
+
+#output-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Grid layout */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 55px;
+    border-radius: 12px;
+    /* slightly rounded, not bubble */
+    border: 1px solid #5aa9e6;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Numbers */
+.number {
+    background: #ffffff;
+    color: #003366;
+}
+
+/* Operators */
+.operator {
+    background: #66b3ff;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Clear button */
+#clear {
+    background: #3399ff;
+    color: white;
+}
+
+/* Backspace */
+#backspace {
+    background: #99ccff;
+}
+
+/* Equals */
+#\= {
+    background: #007acc;
+    color: white;
+}
+
+/* Empty buttons */
+.empty {
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+
+/* Click effect (simple) */
+button:active {
+    background: #99ccff;
+}
